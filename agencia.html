@@ -3,77 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <title>DM Travel Agency</title>
-
-  <style>
-    body {
-      font-family: Arial;
-      background-color: #f4f4f4;
-      text-align: center;
-    }
-
-    .contenedor {
-      background: white;
-      padding: 20px;
-      width: 350px;
-      margin: auto;
-      border-radius: 10px;
-      box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-    }
-
-    input, textarea {
-      width: 90%;
-      padding: 8px;
-      margin-top: 5px;
-    }
-
-    button {
-      padding: 10px;
-      background-color: #007BFF;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #0056b3;
-    }
-  </style>
-
+  <link rel="stylesheet" href="style.css">
+  <!--creamos enlace con la dependencia style.css-->
 </head>
+  
 <body>
 
   <h1>DM Travel Agency</h1>
   <p>Solicita tu viaje con nosotros</p>
 
   <div class="contenedor">
-
     <h2>Formulario de viaje</h2>
 
     <form id="formulario">
 
-      <label>Nombre:</label><br>
-      <input type="text" id="nombre"><br><br>
+      <label>Nombre:</label>
+      <input type="text" id="nombre">
 
-      <label>Correo:</label><br>
-      <input type="email" id="correo"><br><br>
+      <label>Correo:</label>
+      <input type="email" id="correo">
 
-      <label>Destino:</label><br>
-      <input type="text" id="destino" placeholder="Ej: Cancún, París"><br><br>
+      <label>Destino:</label>
+      <input type="text" id="destino" placeholder="Ej: Cancún, París">
 
-      <label>Días de viaje:</label><br>
-      <input type="number" id="dias"><br><br>
+      <label>Días de viaje:</label>
+      <input type="number" id="dias">
 
-      <label>Cantidad de pasajeros:</label><br>
-      <input type="number" id="pasajeros"><br><br>
+      <label>Cantidad de pasajeros:</label>
+      <input type="number" id="pasajeros">
 
-      <label>Mensaje:</label><br>
-      <textarea id="mensaje">Saludos desde Puerto Montt, Darien Madrid.</textarea><br><br>
+      <label>Mensaje:</label>
+      <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
 
       <button type="submit">Enviar solicitud</button>
 
+      <div id="estado" class="estado"></div>
+        <!--agregamos un div para mostrar el estado del envio de forma dinamica-->
     </form>
-
   </div>
-
+  
+<script src="app.js"></script>
 </body>
 </html>
